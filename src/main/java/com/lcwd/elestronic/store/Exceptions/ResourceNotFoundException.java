@@ -1,10 +1,12 @@
 package com.lcwd.elestronic.store.Exceptions;
 
+import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 
 import lombok.Builder;
 
 @Builder
+@AllArgsConstructor
 public class ResourceNotFoundException extends RuntimeException{
 
 	private String message;
